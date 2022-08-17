@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https: //fonts.googleapis.com/css2? family= Abril+Fatface & family= Montserrat:wght@100;200;300;400;500;600;700 & display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -10,19 +13,47 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 10px; }
     .attribution a { color: hsl(216, 72%, 61%); }
-    .img-code {color:hsl(220, 15%, 55%);}
+  
+    .corpo{ background-color: hsl(212, 45%, 89%); }
+    .qrcode{
+      width: 410px;
+      border-radius: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: center;
+      background-color: hsl(0, 0%, 100%);
+      font-family: 'Abril Fatface', cursiva;
+      font-family: 'Montserrat', sem serifa;
+      font-weight: 400,600;
+      color:hsl(218, 44%, 22%);    
+      margin: 0px auto;  
+   }
+    .font{
+      width: 355px;
+      margin-left: 28px;
+      font-size: 14px;
+      
+    }
+    .img-code{ 
+      border-radius: 20px;
+      width: 370px;
+    }
+    .paragrafo{
+      color: hsl(220, 15%, 55%);
+    }
+
   </style>
 </head>
-<body>
+<body class="corpo">
  
-  <div>
-    <a class="img-code" href="images/image-qr-code.png"></a>
-  
-    <h1>Improve your front-end skills by building projects</h1>
-    <p> The QR code to visit Frontend Mentor and take your coding skills to the next level </p>
-
+  <div class="qrcode">
+    <img src="images/image-qr-code.png" alt="img-code" class="img-code">
+    <div class="font">
+      <h1>Melhore suas habilidades de front-end criando projetos</h1>
+      <p class="paragrafo"> O código QR para visitar o Frontend Mentor e levar suas habilidades de codificação para o próximo nível</p>
+    </div>
   </div> 
   
 
